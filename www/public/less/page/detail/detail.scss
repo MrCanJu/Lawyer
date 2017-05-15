@@ -1,0 +1,136 @@
+.detail-nav-bar{
+	width: 100%;
+	display: -webkit-box;
+	-webkit-box-align:center;	
+	margin-top: 20px;
+	padding: 10px 0;
+	background: #fff;
+	a{
+		display: block;
+		-webkit-box-flex:1;
+		display: -webkit-box;
+		-webkit-box-align:center;
+		-webkit-box-pack:center;
+		color: #333;
+		b{
+			width: 60px;
+			height: 60px;
+			border:1px solid #ccc;
+			border-radius: 50%;
+			display: block;
+			display:-webkit-box;
+			-webkit-box-align:center;
+			-webkit-box-pack:center;
+			span{
+				width: 40px;
+				height: 40px;
+				display: block;
+				text-align: center;
+				white-space: pre-wrap;
+				font-size: 14px;
+			}
+			&.orange{
+				background: rgb(245, 83, 32);
+				color: #fff;
+				border:none;
+			}
+		}
+	}
+	
+}
+.detail-list{
+	.detail-one{
+		display: -webkit-box;
+		padding: 10px;
+		box-sizing:border-box;
+		background: #fff;
+		border-top: 1px solid #ccc;
+		.detail-img{
+			width: 20%;
+			img{
+				width: 100%;
+			}
+		}
+		.detail-text{
+			width: 40%;
+			padding: 0 10px;
+			box-sizing:border-box;
+			display: -webkit-box;
+			-webkit-box-align:center;
+			span{
+				display: block;
+			}
+		}
+		.detail-money{
+			width: 40%;
+			padding: 0 10px;
+			box-sizing:border-box;
+			color: orange;
+			font-size: 14px;
+			display: -webkit-box;
+			-webkit-box-align:center;
+			span{
+				display: block;
+			}
+		}
+	}
+}
+
+.deta{
+	width: 100%;
+	background: #fff;
+	padding: 10px;
+	box-sizing:border-box;
+	.head-img{
+		width: 100%;
+		img{
+			width: 100%;
+		}
+	}
+	.deta-title{
+		width: 100%;
+		height: 60px;
+		display: -webkit-box;
+		-webkit-box-align:center;
+		-webkit-box-pack:justify;
+		padding: 0 10px;
+		box-sizing:border-box;
+		border-bottom: 1px solid #eee;
+		span{
+			display: block;
+			color: #666;
+			font-size: 14px;
+			line-height: 60px;
+			&.mo{
+				display: -webkit-box;
+				-webkit-box-align:center;
+				b{
+					height: 40px;
+					width: 40px;
+					border-radius: 50%;
+					background:orange;
+					color: #fff;
+					display:block;
+					text-align: center;
+					line-height: 40px;
+					overflow: hidden;
+				}
+				i{
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+.btn-foot{
+	width: 100%;
+	.btn{
+		background: orange;
+		color: #fff;
+		border-radius: 20px;
+		margin : 0 auto;
+		padding: 0 40px;
+		border:0;
+	}
+}

@@ -1,0 +1,14 @@
+@import "reset.css";
+html,body{
+	font-size:10px;
+}
+@one-color:#ff9b00;
+@two-color:#fff1cc;
+@three-color:#e5f5fc;
+.padding{
+	padding:0;
+	padding-bottom:2.5rem;
+	margin-bottom:5rem;
+}
+@import "../less/base.scss";
+@import "../less/page.scss";

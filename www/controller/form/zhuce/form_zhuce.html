@@ -1,0 +1,37 @@
+<ion-view view-title="用户注册">
+	<ion-nav-bar class="bar-stable">
+      <ion-nav-back-button>
+      	<i class="ico-chevron-left"></i>
+      	{{''}}
+      </ion-nav-back-button>
+    </ion-nav-bar>
+  <ion-content class="padding back_padding">
+   <div class="home_cont">
+   		<section class="Cont_box form_cont">
+			<div class="form">
+				<p class="on">
+		          <span class="">输入手机号：</span>
+		          <input type="text" ng-model="mobile" >
+		        </p>
+		        <p >
+		          <span >验证码：</span>
+		          <input type="text"  ng-model="yanma">
+		          <button class="form_wang" ng-click="yanzhengma()">获取验证码</button>
+		        </p>
+		        <p class="on">
+		          <span  >密码：</span>
+		          <input type="password" ng-model="Pwd">
+		        </p>
+		        <p >
+		          <span  ng-model="twoPwd">再次输入密码：</span>
+		          <input type="password">
+		        </p>
+			</div>
+			<div class="form_btn">
+		        <button class="button" ng-click="zhuce()">提交</button>
+		      </div>
+   		</section>
+		
+	</div>
+  </ion-content>
+</ion-view>

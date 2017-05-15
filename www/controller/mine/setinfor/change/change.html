@@ -1,0 +1,19 @@
+<ion-view view-title="修改密码">
+<ion-nav-back-button>
+	{{"返回"}}
+</ion-nav-back-button>
+  	<ion-content>
+    	<section class="change">
+			<form>
+				<ul>
+					<li><span>原手机号:</span><span><input type="text" placeholder="请输入原手机号" ng-model="mobile"></span></li>
+					<li><span>新密码:</span><span><input type="password" placeholder="请输入新密码" ng-model="new_password"></span></li>
+					<li><span>确认密码:</span><span><input type="password" placeholder="请再次输入新密码" ng-model="twonew_password"></span></li>
+				</ul>
+			</form>
+    	</section>
+    	<section class="btn">
+			<button ng-click="xiugai()">确定</button>
+    	</section>
+  	</ion-content>
+</ion-view>

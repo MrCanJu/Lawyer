@@ -1,0 +1,24 @@
+<ion-view view-title="我的订单" >
+
+    <ion-content  >
+        <div class='order-list' ng-repeat='order in data' ui-sref='deta({id:{{order.article_id}},category:{{order.id}}})'>
+
+          <div class='order-name'>
+              <span>{{order.title}}</span>
+              <span  class='gray'>{{order.order_no}}</span>
+          </div>
+
+          <div class='order-state'>
+            <span class='state-one'>
+              <b class='order-money'>{{order.sell_price}}</b>
+              <b class='order-no'>{{order.status}}</b>
+              <b class='order-del'>取消</b>
+            </span>
+            <span class='gray'>{{order.add_time}}</span>
+          </div>
+          
+        </div> 
+    </ion-content>
+
+
+</ion-view>

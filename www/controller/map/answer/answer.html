@@ -1,0 +1,45 @@
+<ion-view view-title="题库">
+<ion-nav-bar class="bar-stable">
+	<ion-nav-back-button>
+		<i class="ico-chevron-left"></i>
+		{{'返回'}}
+	</ion-nav-back-button>
+</ion-nav-bar>
+    <ion-content scroll='true' style='bottom:4.5rem'>
+    	<div class="map_title">
+			<div class="titles">{{data.category_title}}</div>
+			<time ng-if='data.exam_time!=0'><i class="ion-clock"></i>{{time}}<span>分钟</span></time>
+    	</div>
+    	<div class="map_con">
+			<h2>{{data.title}}</h2>
+			<div class="cons" ng-if='data.type_id!=3'>
+				<p ng-click='check(0)'><span></span>{{data.choiceA}}</p>
+				<p ng-click='check(1)'><span></span>{{data.choiceB}}</p>
+				<p ng-click='check(2)'><span></span>{{data.choiceC}}</p>
+				<p ng-click='check(3)'><span></span>{{data.choiceD}}</p>
+			</div>
+			<div class="cons" ng-if='data.type_id==3'>
+				<input type="text" placeholder="请输入您的答案" class='user_on'>
+			</div>
+			<div class="map_tge" ng-if='tge'>
+				<span>评论</span> <span>{{data.is_vol}}</span>
+	    	</div>
+    	</div>
+    	<div class="map_btn_answer">
+			<button ng-disabled='prev==0' ng-click='btn_tit(prev)'>上一题</button>
+			<button ng-disabled='tj' ng-click='answer_btn()'>提交答案</button>
+			<button ng-disabled='next==0' ng-click='btn_tit(next)'>下一题</button>
+    	</div>
+    	<div class="map_answer" ng-if='tge'>
+			<div class="answer">
+				<p><span>[ 你的选择 ] </span>{{user_answer}}</p>
+				<p><span>[ 正确答案 ] </span>{{data.answer}}</p>
+				<p><span>[ 答案解析 ] </span>{{data.content}}</p>
+			</div>
+    	</div>
+    </ion-content>
+    <div class="note" ng-if='tge'>
+		<span>写评论</span>
+		<span>写笔记</span>
+    </div>
+</ion-view>

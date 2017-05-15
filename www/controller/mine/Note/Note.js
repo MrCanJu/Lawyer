@@ -1,0 +1,9 @@
+app.controller("NoteCtrl",function($scope,userServe){
+	userServe.Note({
+	       id:1
+		},function(data){
+			console.log(data)
+		},function(error){
+			console.log(error)
+		})
+})

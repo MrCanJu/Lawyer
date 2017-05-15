@@ -1,0 +1,29 @@
+<ion-view view-title="登录">
+	<ion-nav-bar class="bar-stable">
+      <ion-nav-back-button>
+      	<i class="ico-chevron-left"></i>
+      	{{''}}
+      </ion-nav-back-button>
+     </ion-nav-bar> 
+  <ion-content class="padding back_padding">
+   <div class="home_cont">
+		<section class="Cont_box form_cont">
+			<div class="form">
+				<p class="on">
+		          <span class="">输入手机号：</span>
+		          <input type="text" ng-model="mobile" >
+		        </p>
+		        <p >
+		          <span >密码：</span>
+		          <input type="password" ng-model="Pwd">
+		          <button class="form_wang" ng-click="wangma()">忘记密码</button>
+		        </p>
+			</div>
+			<div class="form_btn">
+		        <button class="button" ng-click="tijiao()">提交</button>
+		        <button class="button" ui-sref="form_zhuce">注册</button>
+		      </div>
+   		</section>
+	</div>
+  </ion-content>
+</ion-view>

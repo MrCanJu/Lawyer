@@ -1,0 +1,37 @@
+<ion-view view-title="题库">
+<ion-nav-bar class="bar-stable">
+	<ion-nav-back-button>
+		<i class="ico-chevron-left"></i>
+		{{'返回'}}
+	</ion-nav-back-button>
+</ion-nav-bar>
+    <ion-content scroll='true'>
+    	<div class="is_vol1" ng-if='data.is_vol==1'>
+			<div class="map_title">
+				<div class="title">
+					{{data.title}}
+				</div>
+	    	</div>
+	    	<div class="map_counts">
+				<div class="map_count" ng-repeat='item in data.list' ui-sref='answer({id:data.list[$index].id})'>
+					{{$index+1}}
+				</div>
+	    	</div>
+	    	<div class="map_btn" ui-sref='answer({id:data.list[0].id})'>
+				开始答题
+	    	</div>
+    	</div>
+    	<div class="is_vol2" ng-if='data.is_vol==0'>
+			<ul class="list">
+				<li ng-repeat='item in json' ui-sref='mapTitle({id:item.id})'>
+					<a href="javascript:;">
+						<span class="left">{{item.title}}</span>
+						<span class="right">
+							<span class="title">题目</span><span class="num">{{item.count}}</span>
+						</span>
+					</a>
+				</li>
+			</ul>
+    	</div>
+    </ion-content>
+</ion-view>

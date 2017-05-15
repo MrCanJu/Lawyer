@@ -1,0 +1,21 @@
+<ion-view view-title="课程" >
+
+
+  <ion-content class="padding" >
+
+	<nav class='detail-nav-bar'>
+		<a ng-repeat='i in data' ng-click="orange({{i.id}},$index)"><b data-id="{{i.id}}"><span>{{i.title}}</span></b></a>
+	</nav>
+
+   <div class='detail-list'>
+   		<div class='detail-one' ng-repeat='lists in list' ui-sref='deta({id:{{lists.id}},category:{{lists.category_id}}})' >
+   			<div class='detail-img'><img src='http://119.10.11.121:8509/{{lists.img_url}}' alt=""></div>
+   			<div class='detail-text'><span>{{lists.title}}</span></div>
+   			<div class='detail-money'><span>{{lists.price | currency : '￥'}}</span></div>
+   		</div>
+   </div>
+
+  </ion-content>
+
+  <my-footer ></my-footer>
+</ion-view>

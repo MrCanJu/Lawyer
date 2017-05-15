@@ -1,0 +1,12 @@
+app.controller("PLCtrl",function($scope,$http,userServe){
+	//$scope.Name="KX"
+	userServe.PL({
+       user_id:1,
+       pagesize:1,
+       pageindex:1
+	},function(data){
+		console.log(data)
+	},function(error){
+		console.log(error)
+	})
+})

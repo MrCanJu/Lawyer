@@ -1,0 +1,26 @@
+<ion-view view-title="账户管理">
+<ion-nav-back-button>
+	{{'返回'}}
+</ion-nav-back-button>
+  	<ion-content>
+    	<section class="bg">
+			<dl class="pic_b">
+				<dt><img src="../img/imgMI.jpg" alt=""></dt>
+				<dd  ng-model="name">{{name}}</dd>
+			</dl>
+    	</section>
+    	<section class="main_content">
+			<ul>
+				<li><span>昵称</span><span><input type="text" value="刘菲" ng-model="name"></span><span></span></li>
+				<li><span>账号</span><span><input type="text" value="18532547394" ng-model="user_name"></span><span></span></li>
+				<li><span>本科院校</span><span><input type="text" value="唐山师范" ng-model="msn"></span><span></span></li>
+				<li><span>QQ</span><span><input type="text" value="932375028"  ng-model="qq"></span><span></span></li>
+				<li ui-sref="change"><span>修改密码</span><span></span><span>></span></li>
+			</ul>
+    	</section>
+    	<section class="admin">
+			<button class="but" ng-click="baocun()">保存</button>
+    	</section>
+    	
+  	</ion-content>
+</ion-view>

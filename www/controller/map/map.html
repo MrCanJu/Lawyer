@@ -1,0 +1,27 @@
+<ion-view view-title="题库">
+    <ion-content scroll='false'>
+        <ion-slide-box slide-tabs-scrollable="false"  show-pager="false" ion-slide-tabs class='slide-box'>
+            <ion-slide ng-repeat='item in data' ion-slide-tab-label="{{item.title}}" data-id='{{item.id}}'>
+				<ion-content style='height: 100%; bottom: 5rem'>
+					<div class="two">
+						<a href="javascript:;" ng-repeat='item1 in item.data' class="{{item1.tge?'on':'off'}}" ng-click='getQuestion($index)'><span>{{item1.title.substr(0,2)}}</span><span>{{item1.title.substr(2)}}</span></a>
+					</div>
+					<ul class="list">
+						<li ng-repeat='item2 in item.json' ui-sref='mapTitle({id:item2.id})'>
+							<a href="javascript:;">
+								<span class="left">{{item2.title}}</span>
+								<span class="right">
+									<span class="title">题目</span><span class="num">{{item2.count}}</span>
+									<i class="ion-clock" ng-hide='{{item2.exam_time==0?"true":"false"}}'></i>
+									<span class="time" ng-hide='{{item2.exam_time==0?"true":"false"}}'>{{item2.exam_time}}</span>
+								</span>
+							</a>
+						</li>
+					</ul>
+				</ion-content>
+            </ion-slide>
+        </ion-slide-box>
+    </ion-content>
+    <my-footer ></my-footer>
+</ion-view>
+

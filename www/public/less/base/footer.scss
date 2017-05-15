@@ -1,0 +1,58 @@
+.footer{
+	height:5rem;
+	a{
+		display:-webkit-box;
+		-webkit-box-pack:center;
+		-webkit-box-align:center;
+		-webkit-box-orient:vertical;
+		color:#000;
+		i,span{
+			display:block;
+			margin:0.2rem;
+		}
+		i{
+			width:1.6rem;
+			height:1.6rem;
+		}
+		&.active{
+			color:orange;
+			&:nth-child(2){
+				i{
+					background:url(../images/footer.png) no-repeat -5.8rem -0rem;
+					background-size:25rem 1.5rem;
+				}
+			}
+		}
+
+		&:first-child{
+			i{
+				background:url(../images/ind.png) no-repeat -0.6rem -29.7rem;
+				background-size:25.8rem 31.2rem;
+			}
+		}
+		&:nth-child(2){
+			i{
+				background:url(../images/ind.png) no-repeat -6.4rem -29.7rem;
+				background-size:25.8rem 31.2rem;
+			}
+		}
+		&:nth-child(3){
+			i{
+				background:url(../images/footer.png) no-repeat -12.1rem -0rem;
+				background-size:25rem 1.5rem;
+			}
+		}
+		&:nth-child(4){
+			i{
+				background:url(../images/footer.png) no-repeat -5.8rem -0rem;
+				background-size:25rem 1.5rem;
+			}
+		}
+		&:last-child{
+			i{
+				background:url(../images/footer.png) no-repeat -23.6rem -0rem;
+				background-size:25rem 1.5rem;
+			}
+		}
+	}
+}

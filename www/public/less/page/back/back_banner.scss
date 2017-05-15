@@ -1,0 +1,55 @@
+.back_padding{
+	height:100%;
+	padding:0;
+	.scroll{
+		height:100%;
+		
+	}
+	.back_banner{
+		height:100%;
+		.banner_ul{
+			position:relative;			
+			height:100%;
+			width:100%;
+			top:0;
+			left:0;
+			li{			
+				display:block;
+				position:relative;
+				height:100%;
+				width:100%;
+				background:url(https://t1.mmonly.cc/uploads/tu/201601/152/fh0s3ctze4i.jpg) no-repeat left center;
+				background-size:cover;
+				p{
+					position:absolute;
+					bottom:10%;
+					width:100%;
+					left:0;
+					text-align:center;
+					button{
+						display:inline-block;
+						height:36px;
+						background:orange;
+						color:#fff;
+						border:none;
+						border-radius:0.8rem;
+						width:50%;
+					}
+				}	
+			}
+		}
+		.swiper-pagination{
+			text-align:center;
+			span{
+				&.swiper-pagination-bullet{
+					background:#fff;
+					    opacity:1;
+				}
+				&.swiper-pagination-bullet-active{
+					background:orange;
+				}
+			}
+		}
+	}
+
+}

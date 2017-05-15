@@ -1,0 +1,47 @@
+<ion-view view-title="刷题宝" hide-back-button="true" >
+
+  <ion-content class="padding" id="padding">
+		<ion-refresher
+		    pulling-text="下拉刷新..."
+		    on-refresh="xiaLa()"
+			refreshing-text="努力加载中！！！"
+		    >
+		  </ion-refresher>
+
+	    <div class="home_banner">
+			<my-banner></my-banner>
+			<my-nav></my-nav>
+	    </div>
+		<div class="home_cont">
+			<section class="Cont_box">
+				<div class="cont_title">
+					<h3 class="cont_title_h">网络课堂</h3>
+				</div>
+				<div class="cont_cont">
+					<nav class="cont_cont_nav">
+						<a href="javascript:;">司法考试视频<br/>网校入口</a>
+						<a href="javascript:;">法律硕士视频<br/>网校入口</a>
+					</nav>
+				</div>
+			</section>
+		</div>
+  </ion-content>
+
+<my-footer ></my-footer>
+
+
+  <script id="xx" type="text/ng-template">
+    <ion-modal-view>
+	    <ion-content class="padding">
+	         <div class="motai">
+				<div class="motai_cont">	
+				</div>
+	         </div>
+	    </ion-content>
+  </ion-modal-view>
+</script>
+</ion-view>
+
+
+
+

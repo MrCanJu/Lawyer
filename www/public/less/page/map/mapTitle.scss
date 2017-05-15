@@ -1,0 +1,168 @@
+
+	.map_title{
+		width: 100%;
+		height: 80px;
+		background: #eee;
+		font-size: 16px;
+		display: -webkit-box;
+		-webkit-box-orient:vertical;
+		-webkit-box-align:center;
+		-webkit-box-pack:center;
+		.title{
+			width: 100%;
+			height: 80px;
+			text-align: center;
+			line-height: 80px;
+		}
+		.titles{
+			font-size: 14px;
+			padding-bottom: 6px;
+		}
+		time{
+			font-size: 14px;
+			background: #FF9B00;
+			color: #fff;
+			padding:3px 8px;
+			border-radius: 10rem;
+			span{
+				font-size: 10px;
+			}
+		}
+	}
+	.map_counts{
+		width: 100%;
+		background: #fff;
+		text-align: center;
+		.map_count{
+			display: inline-block;
+			width: 40px;
+			height: 40px;
+			text-align: center;
+			line-height: 40px;
+			font-size: 14px;
+			border:1px #eee solid;
+			border-radius: 40px;
+			margin:10px;
+		}
+	}
+	.map_btn{
+		width: 50%;
+		height: 30px;
+		background: #FF9B00;
+		color: #fff;
+		border-radius: 30px;
+		text-align: center;
+		line-height: 30px;
+		margin:0 auto;
+	}
+
+.map_con{
+	width: 100%;
+	box-sizing: border-box;
+	padding:10px;
+	h2{
+		font-size: 12px;
+		line-height: 1.5rem;
+	}
+	.cons{
+		margin-top: 1rem;
+		p{
+			font-size: 12px;
+			padding:0;
+			line-height: 2rem;
+			position: relative;
+			padding-left: 2rem;
+			span{
+				display: inline-block;
+				width: 14px;
+				height: 14px;
+				background: #ccc;
+				margin-right: 1rem;
+				border-radius: 2rem;
+				position: absolute;
+				left: 0;
+				top: 7px;
+			}
+		}
+		.on{
+			span{
+				background: #FF9B00;
+			}
+		}
+		.off{
+			span{
+				background: green;
+			}
+		}
+		input{
+			display: block;
+			margin:0 auto;
+			width: 90%;
+			text-align: center;
+			border:1px #ccc solid;
+			border-radius: 30px;
+		}
+	}
+	.map_tge{
+		width: 100%;
+		height:50px;
+		margin-top: 10px;
+		span{
+			display: inline-block;
+			&:nth-child(1){
+				width: 50px;
+				text-align: center;
+				border-radius: 12px;
+				border:1px #ccc solid;
+				color: #ccc;
+			};
+			&:nth-child(2){
+				border-radius:10px;
+				background: #FF9B00;
+				color: #fff;
+				margin-left: 10px;
+				padding:0 3px;
+			};
+		}
+	}
+}
+.map_btn_answer{
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0 20px;
+	margin:20px auto;
+	display: -webkit-box;
+	-webkit-box-pack:justify;
+	button{
+		display: block;
+	}
+}
+.map_answer{
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0 10px;
+	.answer{
+		width: 100%;
+		background: rgb(243, 239, 162);
+		padding: 10px 5px;
+		p{
+			padding:0;
+			line-height: auto;
+		}
+	}
+}
+.note{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 4rem;
+	display: -webkit-box;
+	span{
+		display: block;
+		width: 50%;
+		height: 4rem;
+		text-align: center;
+		line-height: 4rem;
+		background: #e0dede;
+	}
+}

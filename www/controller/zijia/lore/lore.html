@@ -1,0 +1,38 @@
+<ion-view view-title="{{title}}">
+	<ion-nav-bar>
+		<ion-nav-back-button>
+			<i class="ion-ios-arrow-left"></i>
+			{{""}}
+		</ion-nav-back-button>
+	</ion-nav-bar>
+	<ion-content class="padding">
+		<div class="lore">
+			<div class="serch_container">
+				<input type="text" placeholder="输入关键字" class='serch' id="serch2">
+				<i class='ion-ios-search ' id="icon_search2"></i>
+				<span class='cancel' id="cancelBtn2">取消</span>
+			</div>
+			<div class="content" id="content2">
+				<div ng-if="isInfo" class="lore_list" ng-repeat="item in list" >
+					<!-- 没有子级 请求知识点列表 -->
+					<div ng-if="item.is_layer==0" class='Catalog' ui-sref="loreList({id:item.id,title:item.title})">
+						<span class="list_name">{{item.title}}</span>
+						<span class='aside'>{{item.ccount}}/{{item.count}}题
+							<i class='ion-ios-arrow-forward'></i>
+						</span>
+					</div>
+					<!-- 有子级 继续请求当前接口 -->
+					<div ng-if="item.is_layer==1" class='Catalog' ui-sref="lore({parentId:item.id,title:item.title})">
+						<span class="list_name">{{item.title}}</span>
+						<span class='aside'>{{item.ccount}}/{{item.count}}题
+							<i class='ion-ios-arrow-forward'></i>
+						</span>
+					</div>
+				</div>
+				<div class="prompt" ng-if="!isInfo">
+					{{tsInfo}}
+				</div>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>

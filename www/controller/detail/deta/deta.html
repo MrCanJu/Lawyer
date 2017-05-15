@@ -1,0 +1,19 @@
+<ion-view view-title="详情" >
+
+  <ion-content class="padding" >
+    <div class='deta'>
+      <span class='head-img'><img src="http://119.10.11.121:8509/{{data.img_url}}" alt=""></span>
+      <h2 class='deta-title'>
+        <span>>>{{data.title}}</span>
+        <span class='mo'><i class='title-money'>￥：</i><b>{{data.price}}</b></span>
+      </h2>
+      <div ng-bind-html='cont'></div>    
+    </div>
+
+
+  </ion-content>
+  <div class="bar bar-footer btn-foot">
+    <button class='btn'>购买</button>
+  </div>
+
+</ion-view>

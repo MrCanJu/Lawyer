@@ -1,0 +1,29 @@
+<ion-view view-title="知识点-中律教育" hide-back-button="true">
+    <ion-content class="padding">
+    	<div class="lore">
+			<div class="serch_container">
+				<input type="text" placeholder="输入关键字" class='serch' id="serch1">
+				<i class='ion-ios-search ' id="icon_search1"></i>
+				<span class='cancel' id="cancelBtn1">取消</span>
+			</div>
+			<div class="content" id="content1">
+				 <div ng-repeat="item in viewList">
+					<h3 class="title">{{item.title}}</h3>
+					<dl class='item' ng-repeat="menuItem in item.menu">
+						<dt slide-list>
+							{{menuItem.title}}
+							<i class="ion-ios-arrow-right"></i>
+						</dt>
+						<dd>
+							<div class="Catalog" ng-repeat="subItem in menuItem.subMenu" ui-sref="lore({parentId:subItem.id,title:subItem.title})">
+								<span>{{subItem.title}}</span>
+								<span class='aside'>{{subItem.ccount}}/{{subItem.count}}题<i class='ion-ios-arrow-forward'></i></span>
+							</div>
+						</dd>
+					</dl>
+				</div>
+			</div>
+    	</div>
+    </ion-content>
+    <my-footer></my-footer>
+</ion-view>

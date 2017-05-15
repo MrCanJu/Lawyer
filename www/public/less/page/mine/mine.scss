@@ -1,0 +1,159 @@
+.bg{
+	width:100%;
+	height:15.6rem;
+	background:orange;
+	position: relative;
+	.pic_b{
+		height:5rem;
+		width:5rem;
+		position: absolute;
+		top:0;
+		right:0;
+		bottom:0;
+		left:0;
+		margin:auto;
+		display: -webkit-box;
+		-webkit-box-orient:vertical;
+		-webkit-box-align:center;
+		-webkit-box-pack:center;
+		img{
+			height:100%;
+			width:100%;
+			border-radius: 5rem;
+		}
+	}
+}
+.main_content{
+	width:100%;
+	ul{
+		width: 100%;
+		li{
+			width: 100%;
+			height:5rem;
+			font-size: 1.2rem;
+			border-bottom:1px solid #ccc;
+			display: -webkit-box;
+			-webkit-box-align:center;
+			-webkit-box-align:center;
+			span{
+				display:block;
+				-webkit-box-flex:1;
+				text-align:center;
+				input{
+					width: 80%;
+					text-align:center;
+				}
+				&:nth-child(2){
+					-webkit-box-flex:5;
+				}
+			}
+		}
+	}
+}
+.admin{
+	width:100%;
+	height:6.5rem;
+	position: relative;
+	margin-bottom:5rem;
+	.but{
+		height:4.5rem;
+		width:10rem;
+		background:orange;
+		border:0;
+		color:#fff;
+		border-radius: 4.5rem;
+		position: absolute;
+		left:0;
+		right:0;
+		top:0;
+		bottom:0;
+		margin:auto;
+	}
+}
+.F_news{
+	width:100%;
+	ul{
+		width: 100%;
+		li{
+			width: 100%;
+			height:4.5rem;
+			display: -webkit-box;
+			-webkit-box-align:center;
+			-webkit-box-pack:center!important; 
+			border-bottom:1px solid #ccc;
+			span{
+				display:block;
+				text-align:center;
+				
+				&:nth-child(1){
+					-webkit-box-flex:3;
+				}
+				&:nth-child(2){
+					-webkit-box-flex:3;
+					border-left: 1px solid #ccc
+				}
+			}
+		}
+	}
+}
+.header{
+	height:5rem;
+	width:100%;
+	background: #ccc;
+	line-height: 5rem;
+	text-align: center;
+	font-size: 1.6rem;
+}
+p{
+	
+	padding:3% 3%;
+	line-height: 2rem;
+}
+.change{
+	height:28rem;
+	width:90%;
+	margin-left: 5%;
+	background:#eee;
+	border-radius: 1rem;
+	margin-top: 3rem;
+	form{
+		width:100%;
+		margin-left: 5%;
+		ul{
+			li{
+				height:9rem;
+				display: -webkit-box;
+				-webkit-box-align:center;
+				-webkit-box-pack:center;
+				span{
+					display: block;
+					&:nth-child(1){
+						-webkit-box-flex:2;
+						width: 0;
+						font-size: 1.4rem;
+					}
+					&:nth-child(2){
+						-webkit-box-flex:5;
+						input{
+							height:5rem;
+							outline: none;
+							border-radius: 1rem;
+							width: 80%;
+							text-align: center
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.btn{
+	button{
+		width:90%;
+		margin-left: 5%;
+		height:5rem;
+		background: orange;
+		margin-top: 1.5rem;
+		border:0;
+	}
+}

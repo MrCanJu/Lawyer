@@ -1,0 +1,55 @@
+.home_banner{
+	background:#fff;
+	.zijia_banner{
+		.banner_ul{
+			position:inherit;
+			.swiper-slide{
+				width:100%!important;
+				a{	
+					display:block;
+					width:100%;
+					height:100%;
+
+					}
+				img{
+					display:block;
+					width:100%;
+				}
+			}
+		}
+	}
+}
+
+
+.swiper-pagination{
+	text-align:right;
+	span{
+		background:#fff;
+		&.swiper-pagination-bullet-active {
+			background:yellow;
+		}
+	}
+}
+
+
+.homeCont_nav{
+	.swiper-wrapper{
+		position:inherit;
+		.swiper-slide{
+			width:40%;
+			img{
+				width:100%;
+				display:block;
+			}
+			span{
+				display:block;
+				width:100%;
+				text-align:center;
+				background:#2a2828;
+				color:#fff;
+				height:40px;
+				line-height:40px;
+			}
+		}
+	}
+}

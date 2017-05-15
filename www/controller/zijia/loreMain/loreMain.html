@@ -1,0 +1,15 @@
+<ion-view view-title="知识点-中律教育">
+	<ion-nav-bar>
+		<ion-nav-back-button>
+			<i class="ion-ios-arrow-left"></i>
+			{{""}}
+		</ion-nav-back-button>
+	</ion-nav-bar>
+	<ion-content>
+		<div class="lore">
+			<h1 class="content_title">{{loreMain.category_title}}</h1>
+			<article class="lore_container" ng-bind-html="loreMain.answer"></article>
+		</div>
+	</ion-content>
+	<span class="noteBtn">笔记</span>
+</ion-view>
